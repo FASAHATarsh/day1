@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script>
+      function setup() {
+        createCanvas(windowWidth,windowHeight) ;
+         button = createSprite(windowWidth/2,windowHeight/2+windowHeight/4,windowWidth/4,windowHeight/7);
+       
+      }
+      
+      function draw() {
+        background('red');  
+         
+        if(mousePressedOver(button))
+        {
+          location.href = "game.html";
+        }
+      
+       // console.log(frameRate());
+        drawSprites();
+       
+      }
+      </script>
+  
+
+</body></html>
